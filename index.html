@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheZerotonina - Humor y Aventuras</title>
     <meta name="description" content="El canal oficial de TheZerotonina. Humor, aventuras y la mejor vibra.">
-    <!-- Tailwind CSS desde CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -14,8 +14,8 @@
                     colors: {
                         brand: {
                             yellow: '#FACC15',
-                            dark: '#111827',
-                            card: '#1F2937'
+                            dark: '#0f172a',
+                            card: '#1e293b'
                         }
                     }
                 }
@@ -23,48 +23,50 @@
         }
     </script>
 </head>
-<body class="bg-brand-dark text-white min-h-screen flex flex-col font-sans antialiased selection:bg-brand-yellow selection:text-brand-dark">
+<body class="bg-brand-dark text-white min-h-screen flex flex-col justify-between font-sans antialiased selection:bg-brand-yellow selection:text-brand-dark">
 
-    <!-- Encabezado -->
-    <header class="p-6 flex justify-center md:justify-start">
-        <div class="flex items-center space-x-2 opacity-80 hover:opacity-100 transition-opacity">
-            <!-- Aquí irá tu logo de la molécula -->
-            <span class="text-2xl font-bold tracking-tighter">⚛️ ZEROTONINA</span>
+    <!-- Encabezado Limpio -->
+    <header class="p-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <span class="text-xl md:text-2xl font-black tracking-tighter">⚡ THE ZEROTONINA</span>
+        </div>
+        <!-- Enlaces directos a redes -->
+        <div class="flex space-x-4 text-gray-400">
+            <a href="TU_LINK_DE_YOUTUBE" target="_blank" class="hover:text-brand-yellow transition">YouTube</a>
+            <a href="TU_LINK_DE_INSTAGRAM" target="_blank" class="hover:text-brand-yellow transition">Instagram</a>
         </div>
     </header>
 
-    <!-- Contenido Central -->
-    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+    <!-- Contenido Principal (Hero Section) -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 -mt-10">
         
-        <!-- Tu Avatar / Elemento Visual Principal -->
-        <div class="mb-8 group cursor-pointer">
-            <div class="w-48 h-48 mx-auto bg-brand-card rounded-full flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-300">
-                <span class="text-6xl">😁</span>
+        <!-- Avatar / Personaje -->
+        <div class="mb-6 group">
+            <div class="w-40 h-40 md:w-48 md:h-48 mx-auto bg-brand-card rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.5)] border-2 border-gray-800">
+                <span class="text-6xl md:text-7xl">🎬</span>
             </div>
         </div>
 
-        <!-- Título -->
-        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter">
-            THE ZEROTONINA
+        <!-- Título de Impacto -->
+        <h1 class="text-4xl md:text-7xl font-black mb-3 tracking-tight">
+            HUMOR Y <span class="text-brand-yellow">AVENTURAS</span>
         </h1>
         
-        <!-- Subtítulo -->
-        <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-lg mx-auto leading-relaxed">
-            Humor, aventuras y la dosis exacta de energía que necesitabas hoy.
+        <!-- Descripción corta -->
+        <p class="text-base md:text-xl text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
+            La dosis exacta de energía y risas que necesitabas. Entra, mira los videos y pasa un buen rato.
         </p>
 
-        <!-- Botón de Acción -->
-        <a href="TU_LINK_DE_YOUTUBE_AQUI" target="_blank" 
-           class="bg-brand-yellow text-brand-dark font-bold text-xl py-4 px-10 rounded-full shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:bg-yellow-400 hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] active:scale-95 transition-all duration-300 transform">
-            ▶ VER EL ÚLTIMO VIDEO
+        <!-- Botón Principal (Call to Action) -->
+        <a href="TU_LINK_DE_YOUTUBE" target="_blank" 
+           class="bg-brand-yellow text-brand-dark font-black text-lg md:text-xl py-4 px-10 rounded-full shadow-[0_0_25px_rgba(250,204,21,0.4)] hover:bg-yellow-400 hover:shadow-[0_0_35px_rgba(250,204,21,0.7)] active:scale-95 transition-all duration-300 transform">
+            ▶ VER EL CANAL DE YOUTUBE
         </a>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="p-8 text-center border-t border-brand-card mt-auto">
-        <p class="text-gray-500 text-sm font-medium tracking-widest uppercase">
-            🚀 Próximamente: Mercancía Oficial
-        </p>
+    <!-- Footer Minimalista -->
+    <footer class="p-6 text-center text-gray-600 text-xs md:text-sm">
+        <p>&copy; 2026 TheZerotonina. Todos los derechos reservados.</p>
     </footer>
 
 </body>
