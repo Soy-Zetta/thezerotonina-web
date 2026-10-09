@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheZerotonina - Humor y Aventuras</title>
+    <meta name="description" content="El canal oficial de TheZerotonina. Humor, aventuras y la mejor vibra.">
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FACC15',
+                            dark: '#111827',
+                            card: '#1F2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-white min-h-screen flex flex-col font-sans antialiased selection:bg-brand-yellow selection:text-brand-dark">
+
+    <!-- Encabezado -->
+    <header class="p-6 flex justify-center md:justify-start">
+        <div class="flex items-center space-x-2 opacity-80 hover:opacity-100 transition-opacity">
+            <!-- Aquí irá tu logo de la molécula -->
+            <span class="text-2xl font-bold tracking-tighter">⚛️ ZEROTONINA</span>
+        </div>
+    </header>
+
+    <!-- Contenido Central -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        
+        <!-- Tu Avatar / Elemento Visual Principal -->
+        <div class="mb-8 group cursor-pointer">
+            <div class="w-48 h-48 mx-auto bg-brand-card rounded-full flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-300">
+                <span class="text-6xl">😁</span>
+            </div>
+        </div>
+
+        <!-- Título -->
+        <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter">
+            THE ZEROTONINA
+        </h1>
+        
+        <!-- Subtítulo -->
+        <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-lg mx-auto leading-relaxed">
+            Humor, aventuras y la dosis exacta de energía que necesitabas hoy.
+        </p>
+
+        <!-- Botón de Acción -->
+        <a href="TU_LINK_DE_YOUTUBE_AQUI" target="_blank" 
+           class="bg-brand-yellow text-brand-dark font-bold text-xl py-4 px-10 rounded-full shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:bg-yellow-400 hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] active:scale-95 transition-all duration-300 transform">
+            ▶ VER EL ÚLTIMO VIDEO
+        </a>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="p-8 text-center border-t border-brand-card mt-auto">
+        <p class="text-gray-500 text-sm font-medium tracking-widest uppercase">
+            🚀 Próximamente: Mercancía Oficial
+        </p>
+    </footer>
+
+</body>
+</html>
