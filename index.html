@@ -13,9 +13,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            yellow: '#FACC15',
+                            red: '#EF4444',
                             dark: '#0f172a',
-                            card: '#1e293b'
+                            light: '#f1f5f9',
+                            card: '#ffffff'
                         }
                     }
                 }
@@ -23,49 +24,87 @@
         }
     </script>
 </head>
-<body class="bg-brand-dark text-white min-h-screen flex flex-col justify-between font-sans antialiased selection:bg-brand-yellow selection:text-brand-dark">
+<body class="bg-brand-light text-gray-900 min-h-screen flex flex-col justify-between font-sans antialiased">
 
-    <!-- Encabezado Limpio -->
-    <header class="p-6 md:px-12 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-            <span class="text-xl md:text-2xl font-black tracking-tighter">⚡ THE ZEROTONINA</span>
+    <!-- Header Estilo MKBHD -->
+    <header class="bg-brand-dark text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-md">
+        <!-- Redes sociales izquierda -->
+        <div class="flex space-x-4 text-sm font-medium">
+            <a href="URL_DE_TU_CANAL_DE_YOUTUBE" target="_blank" class="hover:text-red-500 transition">YouTube</a>
+            <a href="URL_DE_TU_INSTAGRAM" target="_blank" class="hover:text-red-500 transition">Instagram</a>
         </div>
-        <!-- Enlaces directos a redes -->
-        <div class="flex space-x-4 text-gray-400">
-            <a href="TU_LINK_DE_YOUTUBE" target="_blank" class="hover:text-brand-yellow transition">YouTube</a>
-            <a href="TU_LINK_DE_INSTAGRAM" target="_blank" class="hover:text-brand-yellow transition">Instagram</a>
+        
+        <!-- Marca central -->
+        <div class="text-xl font-black tracking-widest">
+            ⚡ ZEROTONINA
+        </div>
+
+        <!-- Enlaces derecha -->
+        <div class="flex space-x-6 text-sm font-medium">
+            <a href="URL_DE_TU_CANAL_DE_YOUTUBE" target="_blank" class="hover:text-red-500 transition hidden md:block">Canal</a>
+            <a href="URL_DE_TU_CANAL_DE_YOUTUBE" target="_blank" class="bg-red-600 text-white px-4 py-1.5 rounded text-xs font-bold uppercase tracking-wider hover:bg-red-700 transition">Suscribirse</a>
         </div>
     </header>
 
-    <!-- Contenido Principal (Hero Section) -->
-    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 -mt-10">
+    <!-- Contenido Principal -->
+    <main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full">
         
-        <!-- Avatar / Personaje -->
-        <div class="mb-6 group">
-            <div class="w-40 h-40 md:w-48 md:h-48 mx-auto bg-brand-card rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.5)] border-2 border-gray-800">
-                <span class="text-6xl md:text-7xl">🎬</span>
-            </div>
+        <!-- Título de Sección y Botón de Acción -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-10 border-b pb-6 border-gray-300">
+            <h2 class="text-3xl md:text-4xl font-black tracking-tight text-gray-900 mb-4 md:mb-0">
+                VIDEOS RECIENTES
+            </h2>
+            <a href="URL_DE_TU_CANAL_DE_YOUTUBE" target="_blank" 
+               class="bg-red-600 text-white font-bold text-sm uppercase tracking-wider py-3 px-6 rounded shadow hover:bg-red-700 transition duration-300">
+                VISIT CHANNEL
+            </a>
         </div>
 
-        <!-- Título de Impacto -->
-        <h1 class="text-4xl md:text-7xl font-black mb-3 tracking-tight">
-            HUMOR Y <span class="text-brand-yellow">AVENTURAS</span>
-        </h1>
-        
-        <!-- Descripción corta -->
-        <p class="text-base md:text-xl text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
-            La dosis exacta de energía y risas que necesitabas. Entra, mira los videos y pasa un buen rato.
-        </p>
+        <!-- Cuadrícula de Videos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta de Video 1 -->
+            <div class="bg-brand-card rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500">
+                    <span class="text-sm font-semibold">[ Pon tu Miniatura o Imagen aquí ]</span>
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Título de tu video más reciente...</h3>
+                    <a href="LINK_DEL_VIDEO_1" target="_blank" class="text-red-600 font-semibold text-sm hover:underline">Ver video →</a>
+                </div>
+            </div>
 
-        <!-- Botón Principal (Call to Action) -->
-        <a href="TU_LINK_DE_YOUTUBE" target="_blank" 
-           class="bg-brand-yellow text-brand-dark font-black text-lg md:text-xl py-4 px-10 rounded-full shadow-[0_0_25px_rgba(250,204,21,0.4)] hover:bg-yellow-400 hover:shadow-[0_0_35px_rgba(250,204,21,0.7)] active:scale-95 transition-all duration-300 transform">
-            ▶ VER EL CANAL DE YOUTUBE
-        </a>
+            <!-- Tarjeta de Video 2 -->
+            <div class="bg-brand-card rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500">
+                    <span class="text-sm font-semibold">[ Pon tu Miniatura o Imagen aquí ]</span>
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Título de tu segundo video...</h3>
+                    <a href="LINK_DEL_VIDEO_2" target="_blank" class="text-red-600 font-semibold text-sm hover:underline">Ver video →</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Video 3 -->
+            <div class="bg-brand-card rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-500">
+                    <span class="text-sm font-semibold">[ Pon tu Miniatura o Imagen aquí ]</span>
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <h3 class="font-bold text-lg mb-2 text-gray-800">Título de tu tercer video...</h3>
+                    <a href="LINK_DEL_VIDEO_3" target="_blank" class="text-red-600 font-semibold text-sm hover:underline">Ver video →</a>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <!-- Footer Minimalista -->
-    <footer class="p-6 text-center text-gray-600 text-xs md:text-sm">
+    <!-- Footer Profesional -->
+    <footer class="bg-brand-dark text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="flex justify-center space-x-6 mb-4 text-white">
+            <a href="URL_DE_TU_CANAL_DE_YOUTUBE" class="hover:text-red-500">YouTube</a>
+            <a href="URL_DE_TU_INSTAGRAM" class="hover:text-red-500">Instagram</a>
+        </div>
         <p>&copy; 2026 TheZerotonina. Todos los derechos reservados.</p>
     </footer>
 
