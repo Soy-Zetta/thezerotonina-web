@@ -13,10 +13,14 @@
                 extend: {
                     colors: {
                         brand: {
-                            red: '#EF4444',
-                            dark: '#0f172a',
-                            light: '#f8fafc',
-                            card: '#ffffff'
+                            pink: '#F72585',
+                            purple: '#7209B7',
+                            darkpurple: '#3A0CA3',
+                            blue: '#4361EE',
+                            cyan: '#4CC9F0',
+                            bg: '#0B0719',
+                            card: '#160E2E',
+                            header: '#0E0921'
                         }
                     }
                 }
@@ -24,45 +28,50 @@
         }
     </script>
 </head>
-<body class="bg-brand-light text-gray-900 min-h-screen flex flex-col justify-between font-sans antialiased">
+<body class="bg-brand-bg text-white min-h-screen flex flex-col justify-between font-sans antialiased selection:bg-brand-pink selection:text-white">
 
-    <!-- Header Estilo MKBHD -->
-    <header class="bg-brand-dark text-white py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center shadow-md gap-4 md:gap-0 sticky top-0 z-50">
-        <div class="flex space-x-6 text-sm font-medium order-2 md:order-1">
-            <a href="https://youtube.com/@thezerotonina?si=sG2dCYPnHvbRcYPE" target="_blank" class="hover:text-red-500 transition">YouTube</a>
-            <a href="https://www.instagram.com/thezerotonina/" target="_blank" class="hover:text-red-500 transition">Instagram</a>
+    <!-- Header Elegante con Redes Sociales Completas -->
+    <header class="bg-brand-header/90 backdrop-blur-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center border-b border-white/10 gap-4 md:gap-0 sticky top-0 z-50">
+        <div class="flex space-x-4 md:space-x-6 text-xs md:text-sm font-semibold order-2 md:order-1 text-gray-300 flex-wrap justify-center">
+            <a href="https://youtube.com/@thezerotonina?si=sG2dCYPnHvbRcYPE" target="_blank" class="hover:text-brand-cyan transition-colors">YouTube</a>
+            <a href="https://www.instagram.com/thezerotonina/" target="_blank" class="hover:text-brand-pink transition-colors">Instagram</a>
+            <a href="https://www.tiktok.com/@thezerotonina" target="_blank" class="hover:text-brand-cyan transition-colors">TikTok</a>
+            <a href="https://x.com/thezerotonina" target="_blank" class="hover:text-brand-pink transition-colors">X</a>
         </div>
         
-        <div class="text-2xl font-black tracking-widest order-1 md:order-2 text-center w-full md:w-auto">
-                ZEROTONINA
+        <!-- Nombre de Marca -->
+        <div class="text-2xl md:text-3xl font-black tracking-widest order-1 md:order-2 text-center w-full md:w-auto text-white drop-shadow">
+            ZEROTONINA
         </div>
 
         <div class="flex text-sm font-medium order-3 md:order-3 w-full md:w-auto justify-center md:justify-end">
-            <a href="https://youtube.com/@thezerotonina?sub_confirmation=1" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded text-xs font-bold uppercase tracking-wider hover:bg-red-700 hover:shadow-lg transition text-center w-full md:w-auto">
+            <a href="https://youtube.com/@thezerotonina?sub_confirmation=1" target="_blank" class="bg-brand-pink hover:bg-pink-600 text-white px-6 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all duration-300 text-center w-full md:w-auto shadow-[0_0_15px_rgba(247,37,133,0.4)]">
                 Suscribirse
             </a>
         </div>
     </header>
 
-    <!-- Hero Banner con tu Avatar Rubber Hose -->
-    <section class="bg-brand-dark text-white py-14 px-6 text-center border-b-4 border-red-600 relative overflow-hidden">
+    <!-- Hero Banner -->
+    <section class="relative py-16 px-6 text-center border-b border-white/10 bg-gradient-to-b from-brand-header to-brand-bg">
         <div class="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
             
-            <!-- Avatar Zetta Rubber Hose -->
-            <div class="relative mb-6 group">
-                <div class="absolute -inset-1 bg-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                <div class="relative w-36 h-36 md:w-44 md:h-44 bg-white rounded-full border-4 border-red-600 overflow-hidden flex items-center justify-center shadow-2xl">
-                    <img src="avatar.png" alt="Zetta Rubber Hose" class="w-full h-full object-cover object-top hover:scale-110 transition duration-500">
+            <!-- Avatar Zetta con Zoom Interactivo -->
+            <div class="relative mb-6 group cursor-pointer">
+                <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan to-brand-pink rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                <div class="relative w-36 h-36 md:w-44 md:h-44 bg-white rounded-full border-4 border-brand-cyan overflow-hidden flex items-center justify-center shadow-lg">
+                    <img src="avatar.png" alt="Zetta Rubber Hose" class="w-full h-full object-cover object-top scale-110 transition-transform duration-500 hover:scale-125" style="transition: transform 0.4s ease-in-out;" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform='scale(1.1)'">
                 </div>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-black mb-3 tracking-tight uppercase leading-none">
-                HUMOR, AVENTURAS Y <span class="text-red-500">RISAS</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tight uppercase leading-none">
+                HUMOR, AVENTURAS Y <span class="bg-gradient-to-r from-brand-cyan to-brand-pink bg-clip-text text-transparent">RISAS</span>
             </h1>
-            <p class="text-base md:text-xl text-gray-300 mb-8 max-w-2xl font-light">
+            <p class="text-base md:text-lg text-gray-200 mb-8 max-w-2xl font-light">
                 Probando la comida más rara, visitando lugares increíbles y viviendo experiencias al límite.
             </p>
-            <a href="https://youtube.com/@thezerotonina?sub_confirmation=1" target="_blank" class="bg-red-600 text-white font-bold text-sm uppercase tracking-widest py-3.5 px-8 rounded-full shadow-lg hover:bg-red-500 hover:scale-105 transition-all duration-300">
+
+            <!-- Botón Degradado Neón -->
+            <a href="https://youtube.com/@thezerotonina?sub_confirmation=1" target="_blank" class="bg-gradient-to-r from-brand-pink via-brand-purple to-brand-blue text-white font-extrabold text-sm uppercase tracking-widest py-3.5 px-8 rounded-full shadow-[0_0_20px_rgba(247,37,133,0.5)] hover:shadow-[0_0_30px_rgba(76,201,240,0.8)] hover:scale-105 transition-all duration-300">
                 Únete a la Comunidad
             </a>
         </div>
@@ -72,62 +81,61 @@
     <main class="flex-grow py-12 px-4 md:px-12 max-w-7xl mx-auto w-full">
         
         <!-- Título de Sección -->
-        <div class="flex flex-col md:flex-row justify-between items-center mb-10 border-b pb-6 border-gray-300 gap-4 md:gap-0">
-            <h2 class="text-3xl md:text-4xl font-black tracking-tight text-gray-900">
-                VIDEOS RECIENTES
+        <div class="flex flex-col md:flex-row justify-between items-center mb-10 border-b border-white/10 pb-6 gap-4 md:gap-0">
+            <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-pink"></span> VIDEOS RECIENTES
             </h2>
-            <a href="https://youtube.com/@thezerotonina" target="_blank" class="bg-red-600 text-white font-bold text-sm uppercase tracking-wider py-3 px-8 rounded shadow hover:bg-red-700 transition duration-300 w-full md:w-auto text-center">
+            <a href="https://youtube.com/@thezerotonina" target="_blank" class="bg-brand-blue hover:bg-brand-blue/80 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-6 rounded-xl border border-brand-cyan/30 transition duration-300 w-full md:w-auto text-center shadow-md">
                 VISITAR CANAL
             </a>
         </div>
 
-        <!-- Cuadrícula de Videos con Animaciones -->
+        <!-- Cuadrícula de Videos -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <!-- Tarjeta 1 -->
-            <div class="bg-brand-card rounded-xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col border border-gray-100">
+            <div class="bg-brand-card rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 flex flex-col border border-white/10 group hover:border-brand-cyan/50 hover:shadow-[0_0_20px_rgba(76,201,240,0.3)]">
                 <a href="https://youtu.be/Jlj1hGrFXR8" target="_blank" class="overflow-hidden block">
-                    <img src="https://img.youtube.com/vi/Jlj1hGrFXR8/hqdefault.jpg" alt="PriceSmart VIP" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="https://img.youtube.com/vi/Jlj1hGrFXR8/hqdefault.jpg" alt="PriceSmart VIP" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
                 </a>
                 <div class="p-6 flex-grow flex flex-col justify-between">
-                    <h3 class="font-bold text-lg mb-3 text-gray-800 leading-snug">La verdad sobre la membresía VIP de PriceSmart</h3>
-                    <a href="https://youtu.be/Jlj1hGrFXR8" target="_blank" class="text-red-600 font-bold text-sm hover:underline inline-flex items-center gap-1">Ver video →</a>
+                    <h3 class="font-bold text-base mb-4 text-gray-100 leading-snug group-hover:text-brand-cyan transition-colors">La verdad sobre la membresía VIP de PriceSmart</h3>
+                    <a href="https://youtu.be/Jlj1hGrFXR8" target="_blank" class="text-brand-pink font-extrabold text-xs uppercase tracking-wider group-hover:text-brand-cyan inline-flex items-center gap-1 transition-colors">Ver video →</a>
                 </div>
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="bg-brand-card rounded-xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col border border-gray-100">
+            <div class="bg-brand-card rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 flex flex-col border border-white/10 group hover:border-brand-pink/50 hover:shadow-[0_0_20px_rgba(247,37,133,0.3)]">
                 <a href="https://youtu.be/DrrahhylPsU" target="_blank" class="overflow-hidden block">
-                    <img src="https://img.youtube.com/vi/DrrahhylPsU/hqdefault.jpg" alt="Caldo Peligroso" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="https://img.youtube.com/vi/DrrahhylPsU/hqdefault.jpg" alt="Caldo Peligroso" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
                 </a>
                 <div class="p-6 flex-grow flex flex-col justify-between">
-                    <h3 class="font-bold text-lg mb-3 text-gray-800 leading-snug">¿Quién mezcla chocolate con pescado? Probamos el caldo más raro del mundo</h3>
-                    <a href="https://youtu.be/DrrahhylPsU" target="_blank" class="text-red-600 font-bold text-sm hover:underline inline-flex items-center gap-1">Ver video →</a>
+                    <h3 class="font-bold text-base mb-4 text-gray-100 leading-snug group-hover:text-brand-pink transition-colors">¿Quién mezcla chocolate con pescado? Probamos el caldo más raro del mundo</h3>
+                    <a href="https://youtu.be/DrrahhylPsU" target="_blank" class="text-brand-pink font-extrabold text-xs uppercase tracking-wider group-hover:text-brand-cyan inline-flex items-center gap-1 transition-colors">Ver video →</a>
                 </div>
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="bg-brand-card rounded-xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col border border-gray-100">
+            <div class="bg-brand-card rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 flex flex-col border border-white/10 group hover:border-brand-cyan/50 hover:shadow-[0_0_20px_rgba(76,201,240,0.3)]">
                 <a href="https://youtu.be/S0dpvbVmHNk" target="_blank" class="overflow-hidden block">
-                    <img src="https://img.youtube.com/vi/S0dpvbVmHNk/hqdefault.jpg" alt="Ramen Picante" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500">
+                    <img src="https://img.youtube.com/vi/S0dpvbVmHNk/hqdefault.jpg" alt="Ramen Picante" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
                 </a>
                 <div class="p-6 flex-grow flex flex-col justify-between">
-                    <h3 class="font-bold text-lg mb-3 text-gray-800 leading-snug">¡Del RAMEN Más Suave al Más PICANTE del MUNDO! 🌶️</h3>
-                    <a href="https://youtu.be/S0dpvbVmHNk" target="_blank" class="text-red-600 font-bold text-sm hover:underline inline-flex items-center gap-1">Ver video →</a>
+                    <h3 class="font-bold text-base mb-4 text-gray-100 leading-snug group-hover:text-brand-cyan transition-colors">¡Del RAMEN Más Suave al Más PICANTE del MUNDO! 🌶️</h3>
+                    <a href="https://youtu.be/S0dpvbVmHNk" target="_blank" class="text-brand-pink font-extrabold text-xs uppercase tracking-wider group-hover:text-brand-cyan inline-flex items-center gap-1 transition-colors">Ver video →</a>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-brand-dark text-gray-400 py-8 text-center text-sm border-t border-gray-800">
-        <div class="flex justify-center space-x-6 mb-4 text-white">
-            <a href="https://youtube.com/@thezerotonina" target="_blank" class="hover:text-red-500 transition font-medium">YouTube</a>
-            <a href="https://www.instagram.com/thezerotonina/" target="_blank" class="hover:text-red-500 transition font-medium">Instagram</a>
+<!-- Footer con Redes Sociales Completas y Crédito -->
+    <footer class="bg-brand-header text-gray-400 py-8 text-center text-sm border-t border-white/10">
+        <div class="flex justify-center space-x-6 mb-4 text-white font-medium flex-wrap gap-y-2">
+            <a href="https://youtube.com/@thezerotonina" target="_blank" class="hover:text-brand-cyan transition-colors">YouTube</a>
+            <a href="https://www.instagram.com/thezerotonina/" target="_blank" class="hover:text-brand-pink transition-colors">Instagram</a>
+            <a href="https://www.tiktok.com/@thezerotonina" target="_blank" class="hover:text-brand-cyan transition-colors">TikTok</a>
+            <a href="https://x.com/thezerotonina" target="_blank" class="hover:text-brand-pink transition-colors">X</a>
         </div>
-        <p>&copy; 2026 TheZerotonina. Todos los derechos reservados.</p>
+        <p>&copy; 2026 TheZerotonina. Todos los derechos reservados. <span class="text-gray-500">|</span> Diseñado por <span class="text-brand-cyan font-semibold">Zetta</span></p>
     </footer>
-
-</body>
-</html>
